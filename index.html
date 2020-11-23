@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel='stylesheet' type='text/css' media='screen' href="./index.css">
+  </head>
+
+
+
+  <body>
+    <div class="container" id="photo">
+    <img id="myImg" src="r.png" width="500" height="400" onclick="myFunction()">
+    </div>
+    <div class="container">
+    <button onclick="myFunction()" id="myButton" value="Hide">Hide</button>
+  </div>
+  </body>
+    <script>
+function myFunction() {
+
+                // For Image display
+
+                var btn = document.getElementById("myButton");
+                var x = document.getElementById("myImg");
+                 if (x.style.display === "none") {
+                x.style.display = "block";
+                  } else {
+               x.style.display = "none";
+                     }
+
+                // For Dynamic Button  
+
+                if (btn.value == "Hide") {
+                    btn.value = "Display";
+                    btn.innerHTML = "Display";
+                }
+                else {
+                    btn.value = "Hide";
+                    btn.innerHTML = "Hide";
+                }
+
+            }
+
+</script>
+</html>
